@@ -6,6 +6,8 @@ import Navbar from './component/Navbar';
 import Contact from './Pages/Contact';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
+import LoginSignUp from './Pages/LoginSignUp';
+
 
 // import { analytics } from './Helper/index';
 // import { logEvent } from 'firebase/analytics';
@@ -22,11 +24,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/contact" element={<Contact/>}/>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/register" element={<Register/>}/>
-
-
-  
+        <Route path='/register' element={<Register/>}/>
+         <Route path='/login' element={<Login/>}/>
+         <Route path='/loginsignup' element={<LoginSignUp/>}/>
       </Routes>
       <Footer/>
 
