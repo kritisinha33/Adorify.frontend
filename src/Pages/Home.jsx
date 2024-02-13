@@ -2,12 +2,14 @@ import React from 'react'
 import Slider from '../component/Slider'
 import Card from '../component/Card'
 import Contact from './Contact'
+import Categories from '../component/Route/Categories/Categories'
 
 export default function Home() {
   return (
     <div className='flex justify-center flex-col items-center'>
         <div className='max-w-[100vw] item-center'>
             <Slider/>
+            <Categories/>
         </div>
 
         <div className='bg-white-900 w-full flex mp-10 mt-5 h-auto items-center flex-row'>

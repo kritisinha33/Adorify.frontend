@@ -4,9 +4,9 @@ import Home from './Pages/Home';
 import Footer from './component/Footer';
 import Navbar from './component/Navbar';
 import Contact from './Pages/Contact';
-import Login from './Pages/Login';
 import Register from './Pages/Register';
-import LoginSignUp from './Pages/LoginSignUp';
+import Login from './component/Login/Login';
+import Singup from './component/Signup/Signup';
 
 
 // import { analytics } from './Helper/index';
@@ -26,7 +26,9 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path='/register' element={<Register/>}/>
          <Route path='/login' element={<Login/>}/>
-         <Route path='/loginsignup' element={<LoginSignUp/>}/>
+         <Route path='/sign-up' element={<Singup/>}/>
+
+         
       </Routes>
       <Footer/>
 
