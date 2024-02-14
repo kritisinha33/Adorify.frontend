@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mantine/core": "^7.5.1",
+    "@mantine/hooks": "^7.5.1",
+    "@mantine/modals": "^7.5.1",
     "axios": "^1.6.7",
     "country-state-city": "^3.2.1",
     "firebase": "^10.8.0",

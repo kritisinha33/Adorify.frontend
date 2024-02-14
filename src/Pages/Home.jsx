@@ -1,7 +1,11 @@
 import React from 'react'
 import Slider from '../component/Slider'
 import Card from '../component/Card'
-import Contact from './Contact'
+import image1 from "../assets/img1.jpg"
+import image2 from "../assets/img2.jpg"
+import image3 from "../assets/img3.jpg"
+import image4 from "../assets/img4.jpg"
+import image5 from "../assets/branddescription.jpg"
 import Categories from '../component/Route/Categories/Categories'
 
 export default function Home() {
@@ -12,8 +16,8 @@ export default function Home() {
             <Categories/>
         </div>
 
-        <div className='bg-white-900 w-full flex mp-10 mt-5 h-auto items-center flex-row'>
-        <div className="w-1/2 ml=0"><img src="../src/assets/branddescription.jpg" alt="Website Image"/></div>
+        <div className='bg-white-900 w-auto flex mp-10 mt-5 h-auto items-center flex-row'>
+        <div className="w-1/2 "><img src={image5} alt="Website Image"/></div>
         <div className="w-1/2 p-8">
         <h1 className="text-6xl font-bold mb-4">Brand Franchise</h1>
          <p className='text-pink font-lemon'>
@@ -49,10 +53,10 @@ export default function Home() {
 
 
         <div className="flex flex-col items-center">
-      <img src="../src/assets/img1.jpg" alt="Image 1" className="mb-4" style={{ width: '1000px', height: 'auto'}} />
-      <img src="../src/assets/img2.jpg" alt="Image 1" className="mb-4" style={{ width: '1000px', height: 'auto'}} />
-      <img src="../src/assets/img3.jpg" alt="Image 1" className="mb-4" style={{ width: '1000px', height: 'auto'}}/>
-      <img src="../src/assets/img4.jpg" alt="Image 4" className="mb-4" style={{ width: '1000px', height: 'auto'}}/>
+      <img src={image1} alt="Image 1" className="mb-4" style={{ width: '1000px', height: 'auto'}} />
+      <img src={image2} alt="Image 2" className="mb-4" style={{ width: '1000px', height: 'auto'}} />
+      <img src={image3} alt="Image 3" className="mb-4" style={{ width: '1000px', height: 'auto'}}/>
+      <img src={image4} alt="Image 4" className="mb-4" style={{ width: '1000px', height: 'auto'}}/>
     </div>
 
 

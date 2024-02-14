@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import Signup from "../components/Signup/Signup";
 
-const SignupPage = () => {
+const Signup = () => {
   const navigate = useNavigate();
   const { isAuthenticated } = useSelector((state) => state.user);
 
@@ -19,4 +19,4 @@ const SignupPage = () => {
   )
 }
 
-export default SignupPage;
+export default Signup;
