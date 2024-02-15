@@ -3,14 +3,16 @@ import DropdownButton from './DropdownButton'
 import SearchBar from './Searchbar';
 import logo from "../assets/logo.png"
 import loginlogo from "../assets/loginlogo.jpg"
+ 
 
 export default function Navbar() {
   const [searchTerm, setSearchTerm] = useState('');
-
-  const handleSearchChange = (event) => {
+ const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
-    // Handle search logic here
+    
   };
+
+  
   return (
     <div>
     <nav class="bg-white dark:bg-pink-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
@@ -43,13 +45,17 @@ export default function Navbar() {
                 <a href="Contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-pink-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
               </li>
               <li>
-                <a href="LoginSignUp" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-pink-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                <a href="Login" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-pink-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                 <img src={loginlogo} alt="Logo" className='h-10 w-10'  />
                 </a>
               </li>
             </ul>
+           
+           
+
           </div>
           <form>
+          {/* {openCart ? <Cart setOpenCart={setOpenCart} /> : null} */}
           <div class="flex">
         <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
 

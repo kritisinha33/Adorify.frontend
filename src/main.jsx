@@ -7,14 +7,18 @@ import AppContext from './Helper/AppContext.jsx'
 import { MantineProvider } from '@mantine/core'
 import '@mantine/core/styles.css';
 
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
+  
       <AppContext>
         <MantineProvider>
           <App />
         </MantineProvider>
       </AppContext>
+      
     </BrowserRouter>
   </React.StrictMode>,
 )
