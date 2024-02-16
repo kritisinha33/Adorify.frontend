@@ -6,6 +6,7 @@ import Navbar from './component/Navbar';
 import Contact from './Pages/Contact';
 import Login from './component/Login/Login';
 import Singup from './component/Signup/Signup';
+import Shop from './Pages/Shop';
 
 
 // import { analytics } from './Helper/index';
@@ -25,6 +26,8 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
          <Route path='/login' element={<Login/>}/>
          <Route path='/sign-up' element={<Singup/>}/>
+         <Route path='/shop' element={<Shop/>}/>
+
 
          
       </Routes>
