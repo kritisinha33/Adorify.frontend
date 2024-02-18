@@ -12,6 +12,7 @@ import men_banner from './component/assets/banner_mens.png'
 import women_banner from './component/assets/banner_women.png'
 import kid_banner from './component/assets/banner_kids.png'
 import Product from './Pages/Product';
+import LoginSignup2 from './Pages/LoginSignup2';
 
 // import { analytics } from './Helper/index';
 // import { logEvent } from 'firebase/analytics';
@@ -35,6 +36,8 @@ function App() {
         <Route path='/womens' element={<ShopCategory banner={women_banner} category="women"/>}/>
         <Route path='/kids' element={<ShopCategory banner={kid_banner} category="kid"/>}/>
        <Route path=':productId' element={<Product/>}/>
+       <Route path='loginsignup2' element={<LoginSignup2/>}/>
+
          
       </Routes>
       <Footer/>
