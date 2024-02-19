@@ -13,6 +13,8 @@ import women_banner from './component/assets/banner_women.png'
 import kid_banner from './component/assets/banner_kids.png'
 import Product from './Pages/Product';
 import LoginSignup2 from './Pages/LoginSignup2';
+import Navbar2 from './component/Navbar2/Navbar2';
+import Cart from './Pages/Cart';
 
 
 
@@ -31,9 +33,9 @@ function App() {
     <div>
       
       <Navbar/>
+      <Navbar2/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/contact" element={<Contact/>}/>
          <Route path='/login' element={<Login/>}/>
          <Route path='/sign-up' element={<Singup/>}/>
          <Route path='/shop' element={<Shop/>}/>
@@ -42,11 +44,11 @@ function App() {
         <Route path='/kids' element={<ShopCategory banner={kid_banner} category="kid"/>}/>
        <Route path=':productId' element={<Product/>}/>
        <Route path='loginsignup2' element={<LoginSignup2/>}/>
-
+        
          
         <Route path='/product' element={<Product/>}/>
        <Route path='/product/:productId' element={<Product/>}/>
-     
+       <Route path='/cart' element={<Cart/>}/>
 
        
          
