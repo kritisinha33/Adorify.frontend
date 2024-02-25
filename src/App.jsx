@@ -4,7 +4,6 @@ import Home from './Pages/Home';
 import Footer from './component/Footer';
 import Navbar from './component/Navbar';
 import Contact from './Pages/Contact';
-import Login from './component/Login/Login';
 import Singup from './component/Signup/Signup';
 import Shop from './Pages/Shop';
 import ShopCategory from './Pages/ShopCategory';
@@ -36,7 +35,6 @@ function App() {
       <Navbar2/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-         <Route path='/login' element={<Login/>}/>
          <Route path='/sign-up' element={<Singup/>}/>
          <Route path='/shop' element={<Shop/>}/>
          <Route path='/mens' element={<ShopCategory banner={men_banner} category="men"/>}/>
