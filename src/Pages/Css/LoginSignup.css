@@ -66,7 +66,33 @@
     font-size: 15px;
     font-weight: 500;
 }
-
+@media(max-width:1280){
+    .loginsignup{
+        padding-top: 50px;
+    }
+    .loginsignup-container{
+        width: auto;
+        max-width: 500px;
+        max-height: 500px;
+    }
+    .loginsignup-container h1{
+        margin: 10px 0px;
+    }
+    .loginsignup-fields{
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .loginsignup-fields input{
+        height: 65px;
+        width: 93%;
+    }
+}
+@media(max-width: 600px){
+    .loginsignup-container h1{
+        font-size: 22px;
+        margin: 0px;
+    }
+}
 @media(max-width:1107px){
     .loginsignup{
         padding-top: 50px;
@@ -114,6 +140,12 @@
     }
     .loginsignup-container button{
         height: 50px;
+        font-size: 16px;
+    }
+    .loginsignup-container button{
+        width: 100%;
+    }
+    .loginsignup-login{
         font-size: 16px;
     }
 
