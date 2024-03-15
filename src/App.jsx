@@ -14,6 +14,7 @@ import Product from './Pages/Product';
 import LoginSignup2 from './Pages/LoginSignup2';
 import Navbar2 from './component/Navbar2/Navbar2';
 import Cart from './Pages/Cart';
+import  About  from './Pages/About';
 
 
 
@@ -40,6 +41,8 @@ function App() {
          <Route path='/mens' element={<ShopCategory banner={men_banner} category="men"/>}/>
         <Route path='/womens' element={<ShopCategory banner={women_banner} category="women"/>}/>
         <Route path='/kids' element={<ShopCategory banner={kid_banner} category="kid"/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/About' element={<About/>}/>
        
        <Route path='loginsignup2' element={<LoginSignup2/>}/>
         

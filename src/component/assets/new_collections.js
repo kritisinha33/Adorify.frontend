@@ -6,7 +6,7 @@ import p5_img from "./product_15.jpg";
 import p6_img from "./product_2.jpg";
 import p7_img from "./product_17.jpg";
 import p8_img from "./product_28.jpg";
-
+import p9_img from "./p1_product_i1.png";
 import p10_img from "./p1_product.jpeg";
 let new_collections = [
   {
@@ -72,6 +72,13 @@ let new_collections = [
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
     image: p8_img,
     new_price: 100.0,
+    old_price: 150.0,
+  },
+  {
+    id: 19,
+    name: "Pink teddy with white shade",
+    image: p9_img,
+    new_price: 200.0,
     old_price: 150.0,
   },
 ];
